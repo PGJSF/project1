@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 목록</title>
+    <!-- 여기에 필요한 스타일 시트를 추가할 수 있습니다. -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>게시판 목록</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 여기에 서버에서 받아온 게시글 목록을 반복해서 출력할 부분을 넣어주세요. -->
+            <tr>
+                <td>1</td>
+                <td><a href="게시글URL">게시글 제목 1</a></td>
+                <td>작성자1</td>
+                <td>2023-01-01</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="게시글URL">게시글 제목 2</a></td>
+                <td>작성자2</td>
+                <td>2023-01-02</td>
+            </tr>
+            <!-- 반복 부분 끝 -->
+        </tbody>
+    </table>
+
+</body>
+</html>
