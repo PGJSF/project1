@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #post-form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .post {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+
+        .post p {
+            margin: 0;
+        }
+
+        .post-date {
+            color: #888;
+            font-size: 0.8em;
+        }
+    </style>
+    <title>게시판</title>
+</head>
+<body>
+    <header>
+        <h1>게시판</h1>
+    </header>
+    <main>
+        <form id="post-form">
+            <h2>새 글 작성</h2>
+            <label for="author">작성자:</label>
+            <input type="text" id="author" name="author" placeholder="작성자를 입력하세요">
+
+            <label for="title">제목:</label>
+            <input type="text" id="title" name="title" placeholder="제목을 입력하세요">
+
+            <label for="content">내용:</label>
+            <textarea id="content" name="content" placeholder="내용을 입력하세요"></textarea>
+
+            <button type="button" onclick="submitPost()">글 작성</button>
+        </form>
+
+        <h2>게시물 목록</h2>
+        <div class="post">
+            <p><strong>작성자:</strong> John Doe</p>
+            <p><strong>제목:</strong> 첫 번째 게시물</p>
+            <p><strong>내용:</strong> 이것은 첫 번째 게시물입니다.</p>
+            <p class="post-date">작성일: 2023-01-01</p>
+        </div>
+
+        <!-- 추가 게시물을 필요에 따라 반복해서 추가하세요 -->
+    </main>
+
+    <script>
+        function submitPost() {
+            // 여기에 글 작성 로직을 추가하세요 (예: 서버로 데이터 전송)
+            alert('글이 작성되었습니다!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('../이미지.jpg'); /* Add the path to your background image */
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+            background-repeat: no-repeat;
+            background-color: #f4f4f4; /* Fallback color if the image is not available */
+            
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            border: 2px solid #000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <h2>회원가입</h2>
+    <label for="username">아이디:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">비밀번호:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm_password">비밀번호 확인:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    <label for="email_address">이메일 주소:</label>
+    <input type="text" id="email_address" name="email_address" required>
+
+    <button type="button" onclick="showAlert()">가입하기</button>
+</form>
+<script>
+    function showAlert() {
+        // You can add additional validation here if needed
+
+        // Show the alert
+        alert("회원가입이 완료되었습니다!");
+    }
+</script>
+</body>
+</html>
